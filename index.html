@@ -1,8 +1,12 @@
 <!doctype html>
-<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="bmstable" content="https://c-ikeda123.github.io/bof-difficulty-table/header.json"><title>BOF — 自動推定難易度表</title>
+<html lang="ja"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="bmstable" content="https://c-ikeda123.github.io/bof-difficulty-table/header.json">
+<title>BOF — 自動推定難易度表</title>
 <style>
 :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101419;color:#e8edf2}body{max-width:1120px;margin:auto;padding:48px 24px}a{color:#85ddc3}header{border-top:4px solid #85ddc3;padding-top:24px}.eyebrow{letter-spacing:.2em;color:#85ddc3;font-size:12px}h1{font-size:clamp(28px,5vw,48px);margin:14px 0}p{color:#aebbc6;line-height:1.8}.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}input,select{background:#1d252e;color:inherit;border:1px solid #3b4a58;padding:12px;border-radius:6px}input{flex:1;min-width:180px}.table{overflow:auto}table{width:100%;border-collapse:collapse;text-align:left}th{color:#aebbc6;font-size:12px}td,th{padding:16px 12px;border-bottom:1px solid #2b3540}td:first-child{color:#85ddc3;font-weight:bold;white-space:nowrap}small{color:#aebbc6}.links{white-space:nowrap}footer{margin-top:36px;font-size:13px}#status{min-height:28px}
-</style></head><body><header><h1>BOF 7key 推定難易度表</h1><p>7key SP / 自動推定（≒sl・≒st）</p><p><a href="https://c-ikeda123.github.io/bof-difficulty-table/header.json">プレイヤー登録用ヘッダーJSON</a><br><small>oraja：このページのURLを難易度表に登録 / LR2：BeMusicSeeker等で登録</small></p></header>
+</style></head><body><header><h1>BOF 7key 推定難易度表</h1><p>7key SP / 自動推定（≒sl・≒st）</p><p>登録URL：<a href="table.html">https://c-ikeda123.github.io/bof-difficulty-table/table.html</a><br><small>oraja・BeMusicSeekerには上記URLを登録（header.jsonの直接登録は非対応の版があります）</small></p></header>
 <div class="toolbar"><input id="search" type="search" placeholder="曲名・アーティストで検索" aria-label="曲名・アーティストで検索"><select id="level" aria-label="難易度"><option value="">すべての難易度</option></select><select id="order" aria-label="並び順"><option value="asc">易しい順</option><option value="desc">難しい順</option><option value="title">曲名順</option></select></div>
 <p id="status" role="status">データを読み込み中…</p><div class="table"><table><thead><tr><th>推定難易度</th><th>譜面 / アーティスト</th><th>リンク</th></tr></thead><tbody id="rows"></tbody></table></div><button id="more" hidden>さらに表示</button>
 <footer><p><a href="header.json">難易度表ヘッダ</a> · <a href="data.json">JSONデータ</a> · <a href="https://yamade-bms.github.io/bms-difficulty-estimation-table/estimate/">推定エンジン / yamade-bms</a><br>参考値：推定サイトの既存辞書の値</p></footer>
