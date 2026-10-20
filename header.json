@@ -1,7 +1,7 @@
 {
-  "name": "BOF 自動推定難易度表",
+  "name": "BOF 7key 推定難易度表",
   "symbol": "≒",
-  "data_url": "data.json",
+  "data_url": "https://c-ikeda123.github.io/bof-difficulty-table/data.json",
   "level_order": [
     "sl-",
     "sl0-",
